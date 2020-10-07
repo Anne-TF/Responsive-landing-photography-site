@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--- FONT AWESOME --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <!--- CUSTOM CSS --->
+    <link rel="stylesheet" type='text/css' href='styles.css' />
+    <!--- FONTS --->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Photography Site</title>
+  </head>
+  <body>
+    <!-- HEADER --->
+    <header>
+      <div class="header">
+        <div class="titles">
+        <h1>GhostBunn</h1>
+        <h2>Photograpy site</h2>
+        <hr />
+      </div>
+      <div class="img">
+      </div>
+    </div>
+    </header>
+
+    <!--- NAVIGATION BAR --->
+    <div class="navbar">
+      <navbar class="navmenu">
+        <ul>
+          <img src="../img/Nee Logo 2k19.png" alt="Ghostbunn logo" />
+          <a href=""><li>Home</li></a>
+          <a href="#about"><li>About me</li></a>
+          <a href="#work"><li>My work</li></a>
+          <a href="#contact"><li>Contact me</li></a>
+        </ul>
+      </navbar>
+    </div>
+
+    <!--- 'ABOUT' SECTION --->
+    <div class='container'>
+      <section class='sectionabout' id='about'>
+        <div class='aboutcontainer'>
+          <div class ='imagen'>
+            <img name='slider' height="500" width='500' />
+          </div>
+          <div class='about'>
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </section>
+
+        <!--- WORK --->
+      <section class='work' id='work'>
+        <div class='worklabel'>
+          <h1>My work</h1>
+        </div>
+            <ul>
+              <li>
+                <img src="../img/Wallpaper (21).jpg">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </li>
+              <li>
+                <img src="../img/Wallpaper (25).jpg">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </li>
+              <li>
+                <img src="../img/Wallpaper (27).jpg">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </li>
+            </ul>
+          </div>
+      </section>
+    </div>
+
+    <!--- FOOTER --->
+    <footer class='footer' id='contact'>
+      <div class='contact'>
+        <h2>Contact me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <ul>
+          <i class='fas fa-map-marker-alt'>  Baker Street</i>
+        </li>
+        <li>
+          <i class='fas fa-phone'>  111 111 111</i>
+        </li>
+        <li>
+          <i class="fas fa-envelope-open-text">  LeEmprese@gmail.com</i>
+        </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+    var img = [];
+    img[0] = '../img/Wallpaper (17).jpg';
+    img[1] = '../img/Wallpaper (21).jpg';
+    img[2] = '../img/Wallpaper (29).jpg';
+    img[3] = '../img/Wallpaper (25).jpg';
+
+    var indice = 0;
+
+    function carrusel() {
+
+      document.slider.src = img[indice];
+
+      if (indice < 3) {
+        indice++;
+      }
+      else {
+      indice = 0;
+      }
+    }
+
+    setInterval(carrusel, 3000);
+    carrusel();
+
+    </script>
+  </body>
+</html>
